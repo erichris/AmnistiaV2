@@ -5,8 +5,13 @@ html {
   box-sizing: inherit;
 }
 body{
-  background-color: black;  
+  background-color: red;
 }
+
+#container{
+  background-color: red;
+}
+
 .logo{
   max-width: 50%;
   padding: 13px;
@@ -167,13 +172,13 @@ body{
 }
 @media (max-width:768px){
   .texto{
-    
+
     margin-top: 0px;
   }
   .titulo-firma{
     margin-top: 0px;
     font-size: 1.4rem;
-    
+
   }
   .texto-firma{
     font-size: 18px;
@@ -278,7 +283,7 @@ body{
   }
   .titulo-7{
     font-size: 1.9rem;
-  } 
+  }
   .eliminado{
     font-size: 1.5rem;
   }
