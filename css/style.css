@@ -290,3 +290,70 @@ body{
   margin: 0 25px;
   }
 }
+/*paso 3*/
+.encabezado{
+  background: yellow;
+  display: flex;
+}
+.titulo-3{
+  font-size: 3.5rem;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 27px 10px;
+}
+.eliminado-3{
+  margin-top: 30px;
+  color: #5e365d;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.img-paso3{
+  width: 100%;
+}
+.contedor-publicaciones{min-height: 300px;background-color: #f2f1f6;}
+.boton-3{
+ background-color: black;
+ margin-bottom: 30px;
+}
+.form-btn-3{
+  text-align: center;
+}
+
+.btn-3{
+  border-radius: 60px;
+  margin-top: 30px;
+  border: 3px solid black;
+  background: white;
+  color: black;
+  width: 370px;
+  height: 115px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.btn-3:hover{
+  border: 3px solid black;
+  background: yellow;
+  color: black;
+}
+@media (max-width:768px){
+  .puas-3{
+    visibility: hidden;
+    width: 100%
+  }
+  .btn-3{
+    color: black;
+    width: 240px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .titulo-3{
+    font-size: 1rem;
+    padding: 22px 10px;
+  }
+  .eliminado-3{
+    margin-top: 10px;
+    font-size: 1rem;
+  } 
+}
