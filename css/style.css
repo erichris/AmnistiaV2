@@ -137,7 +137,7 @@ body{
   justify-content: space-between;
 }
 .cont-btn-fir{
-  width: 80%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,5 +195,98 @@ body{
     border: 4px solid black;
     background: yellow;
     color: black;
+  }
+}
+/* paso 7*/
+.puas{
+  max-width: 100%;
+}
+.con-perfil{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.perfil{
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: -400px;
+  border: 5px solid yellow;
+}
+.cont-btn-7{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+.titulo-7{
+  font-size: 5rem;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.eliminado{
+  margin-top: 30px;
+  color: #5e365d;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.texto-7{
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.logos-7{
+  width: 30%;
+  margin: 0 55px;
+}
+.con-logos-7{
+  margin-top: 40px;
+  text-align: center;
+}
+.boton-7{
+  border-radius: 60px;
+  margin-top: 30px;
+  border: 3px solid yellow;
+  background: black;
+  color: yellow;
+  width: 370px;
+  height: 115px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.boton-7:hover{
+  border: 3px solid black;
+  background: transparent;
+  color: black;
+}
+@media (max-width:768px){
+  .perfil{
+    width: 100px;
+    height: 100px;
+    margin-top: -120px;
+  }
+  .cont-btn-7{
+    width: 90%;
+  }
+  .titulo-7{
+    font-size: 1.9rem;
+  } 
+  .eliminado{
+    font-size: 1.5rem;
+  }
+  .texto-7{
+    font-size: 1.4rem;
+  }
+  .logos-7{
+  width: 30%;
+  margin: 0 25px;
   }
 }
