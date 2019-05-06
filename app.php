@@ -21,7 +21,7 @@
                     </div>
                     <div>
                         <div class="con-titulo-3">
-                            <h1 class="titulo-3">se detectaron <span> 00 </span> casos de violencia de género</h1>
+                            <h1 class="titulo-3">se detectaron <span id="ContadorXD"> 00 </span> casos de violencia de género</h1>
                             <h2 class="eliminado-3"> ¡Eliminalos!</h2>
                         </div>
                     </div>
@@ -35,9 +35,8 @@
             <div class="col-sm-12 col xs-12" style="padding-right: 0px; padding-left: 0px;">
                 <div class="contedor-publicaciones">
 					<div id="PostContainer">
-					  <div id='Contador'>
-						<!--<h1 id='PostTotales'>12</h1>-->
-					  </div>
+					<!--<h1 id='PostTotales'>12</h1>-->
+						<!--Lala -->
 					</div>
                 </div>
             </div>
