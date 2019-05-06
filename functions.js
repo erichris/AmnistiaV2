@@ -17,14 +17,12 @@ setInterval(function(){
     console.log(posts);
     if(posts == 0){
       console.log( "No more posts!" );
-      document.getElementById("ContinuarBtn1").style.display = "block";
-      document.getElementById("ContinuarBtn2").style.display = "block";
-      document.getElementById("ContinuarBtn2").disabled = false;
+      //document.getElementById("ButtonContinue").style.display = "block";
+      document.getElementById("ButtonContinue").disabled = false;
     }else{
       console.log( "Delate all of them" );
-      document.getElementById("ContinuarBtn1").style.display = "none";
-      document.getElementById("ContinuarBtn2").style.display = "none";
-      document.getElementById("ContinuarBtn2").disabled = true;
+      //document.getElementById("ButtonContinue").style.display = "none";
+      document.getElementById("ButtonContinue").disabled = true;
     }
   }
 },1000);

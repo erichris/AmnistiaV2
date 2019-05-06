@@ -1,6 +1,6 @@
 <?php
   function getPosts($PostIds, $PostMessage){
-    require "config.php";
+    require "Amnistia/config.php";
 
     try {
       // Returns a `Facebook\FacebookResponse` object
@@ -50,8 +50,9 @@
       $message =  substr($PostMessage[$i], 0, 20);
       print("<div class='PostElement'><a class='PostList' href=\"" . $link . "\" target=\"popup\" onclick=\"window.open('$link','popup','width=800,height=600'); return false;\">" . $message . "</br></a></div>");
     }
-
   }
+  
+  
 
   $PostIds = [];
   $PostMessage = [];
