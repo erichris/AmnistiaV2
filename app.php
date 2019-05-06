@@ -11,10 +11,10 @@
 	<?php require "posts.php" ?>
 	<title>Antivirus Amnistia Internacional-Revisar Perfil</title>
 </head>
-<body style="background-color: black">
-    <div class="container">
+<body style="background-color: rgb(50,50,50,0.3);">
+    <div class="container" style="background-color: black">
         <div class="row">
-            <div class="col-sm-12 col-xs-12">
+            <div class="col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
                 <div class="encabezado">
                     <div>
                         <img class="puas-3"  src="img/grafico-puas-morada.png" alt="">
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col xs-12">
+            <div class="col-sm-12 col xs-12" style="padding-right: 0px; padding-left: 0px;">
                 <div class="contedor-publicaciones">
 					<div id="PostContainer">
 					  <div id='Contador'>
@@ -43,10 +43,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-xs-12">
+            <div class="col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
                 <div class="boton-3">
                     <form class="form-btn-3" action="https://waldoh.webfactional.com/paso6.html">
-                        <input class="btn-3" id="ButtonContinue" type="submit" value="Submit" value="continuar">
+                        <input class="btn-3" id="ButtonContinue" type="submit" value="Continuar" value="continuar">
                     </form>
                 </div>
             </div>

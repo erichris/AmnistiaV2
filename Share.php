@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Antivirus Contra la Violencia de Género-Desinfectar-perfil</title>
+    <script src='http://connect.facebook.net/en_US/all.js'></script>
+	<?php require "Amnistia/config.php"; ?>
+	<title>Antivirus Contra la Violencia de Género-Desinfectar-perfil</title>
+	
+	
+	
 </head>
 <body style="background-color: rgb(50,50,50,0.3);" >
     <div class="container" style="background-color: black">
@@ -31,7 +36,7 @@
 
                         <div class="con-perfil">
                             <div class="perfil">
-                                <img src="foto-pefil" alt="foto de perfil">
+                                <img id="PhotoPerfil" src="foto-pefil" alt="foto de perfil">
                             </div>
                         </div>
                     </div>
@@ -47,7 +52,7 @@
                             <img class="logos-7" src="img/logo vivan las mujeres-violeta.png" alt="logo vivan las mujeres">
                         </div>
                         <form action="">
-                            <input class="boton" type="button" value="comprobar">
+                            <input class="boton" id="MyShareBtn" type="button" value="Compartir">
                         </form>
                     </div>
                 </div>
@@ -56,5 +61,31 @@
         </div>
 
     </div>
+	
+
+
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId            : '587772308373095',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v3.2'
+      });
+    };
+  </script>
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+  <script>
+  document.getElementById('MyShareBtn').onclick = function() {
+    console.log("entro");
+    FB.ui({
+      method: 'share',
+      display: 'popup',
+      href: 'https://www.facebook.com/PixelesMuertosStudio/photos/a.1678876739074501/1769905816638259/',
+    }, function(response){});
+  }
+  </script>
+	
 </body>
 </html>
