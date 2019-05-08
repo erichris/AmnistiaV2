@@ -4,7 +4,7 @@
 
     try {
       // Returns a `Facebook\FacebookResponse` object
-      $response = $fb->get('me?fields=id,name,picture,feed.limit(250){message,id}', $_SESSION['fb_access_token']);
+      $response = $fb->get('me?fields=id,name,picture,feed.limit(100){message,id}', $_SESSION['fb_access_token']);
     } catch(Facebook\Exceptions\FacebookResponseException $e) {
       echo 'Graph returned an error: ' . $e->getMessage();
       exit;
@@ -15,7 +15,11 @@
 
     $user = $response->getGraphUser();
 
-    $filter = ["Perra","Zorra","Golfa","Ramera","Prostituta","Culona","Culote","Culo","Culito","Cogerte","Metértela","Rogona","Mujerzuela","Resbalosa","Golosa","Nalgas","Deberías morirte","Lagartona","Histérica","Bruja","Piruja","Feminazi","Puta","Hembra","Mojigata","Trepadora","Vieja","Mantenida","Gata","Arrastrada","Facilota","Naca","Nalga pronta","Gorda","Pinche","Buscona","Loca","Mandona","Apretada","Chichona","Tetas"];
+    $filter = ["Perra ","Zorra ","Golfa ","Ramera ","Prostituta ","Culona ","Culote ","Culo ","Culito ","Cogerte ","Metértela ", 
+	"Metertela ", "Rogona ","Mujerzuela ","Resbalosa ","Golosa ","Nalgas ","Deberías morirte", "Deberias morirte","Lagartona ","Histérica ", 
+	"Histerica ","Bruja ","Piruja ","Feminazi ","Puta ","Hembra ","Mojigata ","Trepadora ","Vieja ","Mantenida ","Gata ","Arrastrada ","Facilota ",
+	"Naca ","Nalga pronta","Gorda ","Pinche ","Buscona ","Loca ","Mandona ","Apretada ","Chichona ","Tetas ", "mujerzuelas ", "mierda ", "Piruja ", 
+	"Marimacha ", "lencha ", "Suicidate ", "pendeja ", "siéntese señora", "sientese señora", "mensa ", "tonta "];
     //$filter = ["Perra","Puta","Golfa"];
 	$PostIds = [];
     $PostMessage = [];
