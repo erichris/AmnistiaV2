@@ -1,50 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Antivirus Amnistia Internacional</title>
+	<script type="text/javascript">
+		var userLang = navigator.language || navigator.userLanguage; 
+		alert ("The language is: " + userLang);
+		if(userLang.includes("es")){
+			window.open("https://waldoh.webfactional.com/main.html", "_top"); 
+		}else{
+			window.open("https://waldoh.webfactional.com/main2.html", "_top"); 
+		}
+	</script>
 </head>
 <body style="background-color: rgb(50,50,50,0.3);">
-  <div id = "chrisContainer">
-    <div class="container" style="background-color: black">
-        <div class="row">
-            <div class="col-sm-12 col-xs-12">
-
-                <div class="logos" style="text-align:center">
-                    <img class="logo" src="img/logo_amnistia_internacional.png" alt="amnistia Internacional">
-                    <img class="logo" src="img/logo vm.png" alt="vivan las mujeres">
-
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col xs-12">
-                <h1 class="titulo">¿crees que tu perfil esta libre de violencia de genero?</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
-                <div class="contendor-inferior">
-                    <div class="contenedor-img ">
-                        <img class="img-principal" src="img/antivirus_amnistia.png" alt="antivirus amnistia internacional">
-                    </div>
-                    <div class="contenedor-boton">
-                        <h2 class="subtitulo">Compruébalo con el antivirus  de amnistía Internacional</h2>
-                        <form action="https://waldoh.webfactional.com/login.php">
-                            <input class="boton" type="submit" value="Comprobar" onclick="console.log('123')" alt="Submit">
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-  </div>
+  
 </body>
 </html>

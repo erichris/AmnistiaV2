@@ -4,7 +4,7 @@
 
     try {
       // Returns a `Facebook\FacebookResponse` object
-      $response = $fb->get('me?fields=id,name,picture,feed.limit(10){message,id}', $_SESSION['fb_access_token']);
+      $response = $fb->get('me?fields=id,name,picture,feed.limit(250){message,id}', $_SESSION['fb_access_token']);
     } catch(Facebook\Exceptions\FacebookResponseException $e) {
       echo 'Graph returned an error: ' . $e->getMessage();
       exit;
