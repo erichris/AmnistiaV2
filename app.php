@@ -4,11 +4,10 @@
     <title>Antivirus Amnistia Internacional</title>
 	<script type="text/javascript">
 		var userLang = navigator.language || navigator.userLanguage; 
-		alert ("The language is: " + userLang);
-		if(!userLang.includes("es")){
+		if(userLang.includes("es")){
 			window.open("https://waldoh.webfactional.com/app_es.php", "_top"); 
 		}else{
-			window.open("https://waldoh.webfactional.com/en/app_en.php", "_top"); 
+			window.open("https://waldoh.webfactional.com/app_en.php", "_top"); 
 		}
 	</script>
 </head>

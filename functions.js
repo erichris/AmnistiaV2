@@ -37,7 +37,17 @@ function order(){
 
 function refresh(){
     removePosts();
-	$('#PostContainer').load('posts.php');
+	
+	var userLang = navigator.language || navigator.userLanguage; 
+	if(userLang.includes("es")){
+		$('#PostContainer').load('posts.php');
+	}else{
+		$('#PostContainer').load('posts_en.php');
+	}
+	
+	
+	
+	
 	
 }
 

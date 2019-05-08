@@ -77,17 +77,17 @@
                     </div>
                     <div class="cont-btn-7">
                         <div class="cont-titulo">
-                                <h1 class="titulo-7">has desinfectado tu perfil</h1>
+                                <h1 class="titulo-7">You have disinfected you profile</h1>
                         </div>
-                        <h2 class="eliminado"><span>00</span>Mensaje eliminados</h2>
-                        <p class="texto-7">comparte el antivirus con tus amigos, juntos podemos exterminar la violencia de género
+                        <h2 class="eliminado"><span>00</span> deleted messages</h2>
+                        <p class="texto-7">Share the Antivirus with your friends. Together we can erradicate Gender Violence.
                         </p>
                         <div class="con-logos-7">
                             <img class="logos-7" src="img/logo amnistia-internacional-negro.png" alt="logo amnistia internacional ">
                             <img class="logos-7" src="img/logo vivan las mujeres-violeta.png" alt="logo vivan las mujeres">
                         </div>
                         <form action="">
-                            <input class="boton" id="MyShareBtn" type="button" value="Compartir">
+                            <input class="boton" id="MyShareBtn" type="button" value="Share">
                         </form>
                     </div>
                 </div>
