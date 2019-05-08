@@ -4,7 +4,7 @@
 
     try {
       // Returns a `Facebook\FacebookResponse` object
-      $response = $fb->get('me?fields=id,name,posts.limit(250){message,id}', $_SESSION['fb_access_token']);
+      $response = $fb->get('me?fields=id,name,picture,feed.limit(10){message,id}', $_SESSION['fb_access_token']);
     } catch(Facebook\Exceptions\FacebookResponseException $e) {
       echo 'Graph returned an error: ' . $e->getMessage();
       exit;
@@ -19,17 +19,17 @@
     //$filter = ["Perra","Puta","Golfa"];
 	$PostIds = [];
     $PostMessage = [];
-    for($i = 0; $i < count($user["posts"]); $i++) {
-      //print($user["posts"][$i]);
+	$urlPic = $user["picture"]["url"];
+    for($i = 0; $i < count($user["feed"]); $i++) {
       $message = "";
       $id = "";
 
-      if(!isset($user["posts"][$i]["message"])){
+      if(!isset($user["feed"][$i]["message"])){
         continue;
       }
 
-      $message = $user["posts"][$i]["message"];
-      $id = $user["posts"][$i]["id"];
+      $message = $user["feed"][$i]["message"];
+      $id = $user["feed"][$i]["id"];
       for($j = 0; $j < count($filter); $j++) {
         if (strpos(strtolower("| ".$message), strtolower(" ".$filter[$j])) == true) {
             array_push($PostIds, $id);
@@ -40,11 +40,11 @@
         }
       }
     }
-    return [$PostIds, $PostMessage];
+    return [$PostIds, $PostMessage, $urlPic];
   }
 
 
-  function createList($PostIds, $PostMessage){
+  function createList($PostIds, $PostMessage, $urlPic){
     for($i = 0; $i < count($PostIds); $i++) {
       $link = "http://facebook.com/" . $PostIds[$i];
       $message =  substr($PostMessage[$i], 0, 20);
@@ -52,7 +52,7 @@
 	  <a class='ancler-post PostList' href='" . $link . "'target=\"popup\" onclick=\"window.open('$link','popup','width=800,height=600'); return false;\">
 							<div class='post'>
 								<div class='col-sm-1 col-xs-1 con-img-post'>
-									<img src='img/foto-perfil.jpg' alt='' class='foto-public'>
+									<img src='" . $urlPic . "' alt='' class='foto-public'>
 								</div>
 								<div class='col-sm-11 col-xs-11'>
 									<span class='nombre-publi' >Chris Corona</span>
@@ -76,6 +76,7 @@
   $Answer = getPosts($PostIds, $PostMessage);
   $PostIds = $Answer[0];
   $PostMessage = $Answer[1];
-  createList($PostIds, $PostMessage);
+  $urlPic = $Answer[2];
+  createList($PostIds, $PostMessage, $urlPic);
 
  ?>

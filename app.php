@@ -1,3 +1,4 @@
+<?php require "posts.php" ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="functions.js"></script>
-	<?php require "posts.php" ?>
+	
 	<title>Antivirus Amnistia Internacional-Revisar Perfil</title>
 </head>
 <body style="background-color: rgb(50,50,50,0.3);">

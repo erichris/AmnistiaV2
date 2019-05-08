@@ -1,3 +1,37 @@
+<?php require "Amnistia/config.php"; ?>
+<?php
+  function getPhoto(){
+    require "Amnistia/config.php";
+
+    try {
+      // Returns a `Facebook\FacebookResponse` object
+      $response = $fb->get('me?fields=id,name,picture', $_SESSION['fb_access_token']);
+    } catch(Facebook\Exceptions\FacebookResponseException $e) {
+      echo 'Graph returned an error: ' . $e->getMessage();
+      exit;
+    } catch(Facebook\Exceptions\FacebookSDKException $e) {
+      echo 'Facebook SDK returned an error: ' . $e->getMessage();
+      exit;
+    }
+
+    $user = $response->getGraphUser();
+
+	$urlPic = $user["picture"]["url"];
+    
+    return $urlPic;
+  }
+
+
+  function createPhoto($urlPic){
+	print("<img id='PhotoPerfil' src='" . $urlPic . "' alt=''>");
+  }
+  
+  
+  $PhotoUrl = getPhoto();
+  createPhoto($PhotoUrl);
+
+ ?>
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +41,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src='http://connect.facebook.net/en_US/all.js'></script>
-	<?php require "Amnistia/config.php"; ?>
+    <script src='https://connect.facebook.net/en_US/all.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
 	<title>Antivirus Contra la Violencia de Género-Desinfectar-perfil</title>
 	
 	
@@ -36,7 +71,7 @@
 
                         <div class="con-perfil">
                             <div class="perfil">
-                                <img id="PhotoPerfil" src="foto-pefil" alt="foto de perfil">
+                                <!--img id="PhotoPerfil" src="foto-pefil" alt="foto de perfil"-->
                             </div>
                         </div>
                     </div>
@@ -86,6 +121,13 @@
     }, function(response){});
   }
   </script>
-	
+	<script>
+	function order(){
+	  $("#PhotoPerfil").appendTo(".perfil");
+	  //$("#Contador").appendTo("#ContadorXD");
+
+	}
+	order();
+	</script
 </body>
 </html>
