@@ -514,5 +514,7 @@ body{
     background-color: #f2f1f6;
     width: 300px;
   }
-  
+ .btn-paso6{
+   width: 120px;
+ } 
 }
