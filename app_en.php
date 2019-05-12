@@ -22,7 +22,7 @@
                     </div>
                     <div>
                         <div class="con-titulo-3">
-                            <h1 class="titulo-3"> <span id="ContadorXD"> 00 </span> cases of gender violence were detected.</h1>
+                            <h1 class="titulo-3"> <span id="ContadorXD"> 00 </span> cases </br>of gender violence were detected.</h1>
                             <h2 class="eliminado-3"> Delete them!</h2>
                         </div>
                     </div>

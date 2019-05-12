@@ -24,6 +24,7 @@
 	$PostIds = [];
     $PostMessage = [];
 	$urlPic = $user["picture"]["url"];
+	$userName = $user["name"];
     for($i = 0; $i < count($user["feed"]); $i++) {
       $message = "";
       $id = "";
@@ -44,11 +45,11 @@
         }
       }
     }
-    return [$PostIds, $PostMessage, $urlPic];
+    return [$PostIds, $PostMessage, $urlPic, $userName];
   }
 
 
-  function createList($PostIds, $PostMessage, $urlPic){
+  function createList($PostIds, $PostMessage, $urlPic, $userName){
     for($i = 0; $i < count($PostIds); $i++) {
       $link = "http://facebook.com/" . $PostIds[$i];
       $message =  substr($PostMessage[$i], 0, 20);
@@ -59,7 +60,7 @@
 									<img src='" . $urlPic . "' alt='' class='foto-public'>
 								</div>
 								<div class='col-sm-11 col-xs-11'>
-									<span class='nombre-publi' >Chris Corona</span>
+									<span class='nombre-publi' >" .$userName ."</span>
 									<p class='post-text'>" . $message . "</p>
 								</div>
 							</div>
@@ -81,6 +82,7 @@
   $PostIds = $Answer[0];
   $PostMessage = $Answer[1];
   $urlPic = $Answer[2];
-  createList($PostIds, $PostMessage, $urlPic);
+  $userName = $Answer[3];
+  createList($PostIds, $PostMessage, $urlPic, $userName);
 
  ?>

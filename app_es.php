@@ -22,8 +22,8 @@
                     </div>
                     <div>
                         <div class="con-titulo-3">
-                            <h1 class="titulo-3">se detectaron <span id="ContadorXD"> 00 </span> casos de violencia de género</h1>
-                            <h2 class="eliminado-3"> ¡Eliminalos!</h2>
+                            <h1 class="titulo-3">se detectaron <span id="ContadorXD"> 00 </span> casos </br>de violencia de género</h1>
+                            <h2 class="eliminado-3"> ¡Elimínalos!</h2>
                         </div>
                     </div>
                     <div>
