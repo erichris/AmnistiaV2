@@ -79,7 +79,7 @@
                         <div class="cont-titulo">
                                 <h1 class="titulo-7">has desinfectado tu perfil</h1>
                         </div>
-                        <h2 class="eliminado"><span>00</span>Mensaje eliminados</h2>
+                        <h2 class="eliminado"><span>00</span> Mensaje eliminados</h2>
                         <p class="texto-7">comparte el antivirus con tus amigos, juntos podemos exterminar la violencia de género
                         </p>
                         <div class="con-logos-7">
