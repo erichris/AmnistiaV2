@@ -531,4 +531,9 @@ body{
   height: 50px;
   border-radius: 50%;
 }
+/** modificaciones del 12 de mayo*/
+#PhotoPerfil{
+  width: 100%;
+  border-radius: 50%;
+}
 }
