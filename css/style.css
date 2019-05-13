@@ -306,22 +306,27 @@ body{
   margin: 0 25px;
   }
 }
-/*paso 3*/
+
+/* inicia  modulo del paso 3*/
+.puas-3{
+  visibility: hidden;
+  width: 100%
+}
 .encabezado{
   background: yellow;
   display: flex;
 }
 .titulo-3{
-  font-size: 3.5rem;
+  font-size: 1rem;
   color: black;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 27px 10px;
+  padding: 22px 10px;
 }
 .eliminado-3{
-  margin-top: 30px;
+  margin-top: 10px;
   color: #5e365d;
-  font-size: 3.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -346,9 +351,9 @@ body{
   border: 3px solid black;
   background: white;
   color: black;
-  width: 370px;
-  height: 115px;
-  font-size: 40px;
+  width: 240px;
+  height: 55px;
+  font-size: 16px;
   font-weight: 500;
 }
 .btn-3:hover{
@@ -376,6 +381,7 @@ body{
     font-size: 1rem;
   } 
 }
+/* termina  modulo del paso 3*/
 /*paso 2 */
 .contendor-inferior-2{
   background-color: #5e365d;
