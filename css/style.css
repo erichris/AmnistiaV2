@@ -11,15 +11,15 @@ body{
 #container{
   background-color: red;
 }
-
+/* empiezan estilos de la hoja main*/
 .logo{
-  max-width: 50%;
-  padding: 13px;
+  max-width: 40%;
+  padding: 0px 17px;
 }
 .titulo{
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: yellow;
-  font-size: 5.6rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -38,7 +38,7 @@ body{
     width: 100%;
 }
 .contenedor-boton{
-  width: 60%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,32 +48,30 @@ body{
 .subtitulo{
     text-transform: uppercase;
     color: black;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
 }
-
-
 .boton{
-  border-radius: 60px;
-  margin-top: 30px;
+  border-radius: 30px;
+  margin-top: 10px;
   border: 3px solid yellow;
   background: black;
   color: yellow;
-  width: 470px;
-  height: 115px;
+  width: 240px;
+  height: 55PX;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .boton:hover{
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 10px;
   border: 4px solid black;
   background: yellow;
   color: black;
 }
 .logos{
-  display: flex;
+  display: table-row;
   justify-content: space-around;
 }
 
@@ -116,9 +114,10 @@ body{
   }
 
 }
-/*paso 6 */
+/*terminan estilos de la hoja main*/
+/* empiezan estilos de la hoja paso 6 */
+/**/
 .espacio{
-  height: 40px
 }
 .cont-texto{
   position: relative;
@@ -126,18 +125,18 @@ body{
 .texto{
   position: absolute;
   width: 52%;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 .titulo-firma{
-  margin-top: 20px;
+  margin-top: 0px;
   color: yellow;
-  font-size: 4.5rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   padding-left: 20px;
 }
 .texto-firma{
   color: black;
-  font-size: 33px;
+  font-size: 18px;
   font-weight: bolder;
   text-align: justify;
 }
@@ -157,14 +156,14 @@ body{
   width: 100%;
 }
 .btn-firma{
-  border-radius: 60px;
+  border-radius: 30px;
   margin-top: 30px;
   border: 3px solid yellow;
   background: black;
   color: yellow;
-  width: 370px;
-  height: 115px;
-  font-size: 40px;
+  width: 240px;
+  height: 55px;
+  font-size: 16px;
   font-weight: 500;
 }
 .btn-firma:hover{
@@ -174,9 +173,11 @@ body{
   background: yellow;
   color: black;
 }
+.txt-6{
+  text-align: justify;
+}
 @media (max-width:768px){
   .texto{
-
     margin-top: 0px;
   }
   .titulo-firma{
@@ -206,6 +207,7 @@ body{
     color: black;
   }
 }
+/* terminan  estilos de la hoja paso 6 */
 /* paso 7*/
 .puas{
   max-width: 100%;
