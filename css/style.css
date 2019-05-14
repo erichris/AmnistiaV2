@@ -11,15 +11,15 @@ body{
 #container{
   background-color: red;
 }
-
+/* empiezan estilos de la hoja main*/
 .logo{
-  max-width: 50%;
-  padding: 13px;
+  max-width: 40%;
+  padding: 0px 17px;
 }
 .titulo{
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: yellow;
-  font-size: 5.6rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -38,7 +38,7 @@ body{
     width: 100%;
 }
 .contenedor-boton{
-  width: 60%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,32 +48,30 @@ body{
 .subtitulo{
     text-transform: uppercase;
     color: black;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
 }
-
-
 .boton{
-  border-radius: 60px;
-  margin-top: 30px;
+  border-radius: 30px;
+  margin-top: 10px;
   border: 3px solid yellow;
   background: black;
   color: yellow;
-  width: 470px;
-  height: 115px;
+  width: 240px;
+  height: 55PX;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .boton:hover{
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 10px;
   border: 4px solid black;
   background: yellow;
   color: black;
 }
 .logos{
-  display: flex;
+  display: table-row;
   justify-content: space-around;
 }
 
@@ -116,9 +114,10 @@ body{
   }
 
 }
-/*paso 6 */
+/*terminan estilos de la hoja main*/
+/* empiezan estilos de la hoja paso 6 */
+/**/
 .espacio{
-  height: 40px
 }
 .cont-texto{
   position: relative;
@@ -126,18 +125,18 @@ body{
 .texto{
   position: absolute;
   width: 52%;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 .titulo-firma{
-  margin-top: 20px;
+  margin-top: 0px;
   color: yellow;
-  font-size: 4.5rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   padding-left: 20px;
 }
 .texto-firma{
   color: black;
-  font-size: 33px;
+  font-size: 18px;
   font-weight: bolder;
   text-align: justify;
 }
@@ -157,14 +156,14 @@ body{
   width: 100%;
 }
 .btn-firma{
-  border-radius: 60px;
+  border-radius: 30px;
   margin-top: 30px;
   border: 3px solid yellow;
   background: black;
   color: yellow;
-  width: 370px;
-  height: 115px;
-  font-size: 40px;
+  width: 240px;
+  height: 55px;
+  font-size: 16px;
   font-weight: 500;
 }
 .btn-firma:hover{
@@ -174,9 +173,11 @@ body{
   background: yellow;
   color: black;
 }
+.txt-6{
+  text-align: justify;
+}
 @media (max-width:768px){
   .texto{
-
     margin-top: 0px;
   }
   .titulo-firma{
@@ -206,6 +207,8 @@ body{
     color: black;
   }
 }
+/* terminan  estilos de la hoja paso 6 */
+/* inicia  estilos de la hoja paso 7 */
 /* paso 7*/
 .puas{
   max-width: 100%;
@@ -216,11 +219,11 @@ body{
   justify-content: center;
 }
 .perfil{
-  width: 350px;
-  height: 350px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   border-radius: 50%;
-  margin-top: -400px;
+  margin-top: -120px;
   border: 5px solid yellow;
 }
 .foto-perfil{
@@ -228,7 +231,7 @@ body{
   border-radius: 50%
 }
 .cont-btn-7{
-  width: 70%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,21 +239,21 @@ body{
   padding-top: 30px;
 }
 .titulo-7{
-  font-size: 5rem;
+  font-size: 1.8rem;
   color: black;
   font-weight: bold;
   text-transform: uppercase;
 }
 .eliminado{
-  margin-top: 30px;
+  margin-top: 5px;
   color: #5e365d;
-  font-size: 3.5rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: bold;
 }
 .texto-7{
   margin-top: 20px;
-  font-size: 2.5rem;
+  font-size: 1.4rem;
   color: black;
   font-weight: bold;
   text-transform: uppercase;
@@ -258,7 +261,7 @@ body{
 }
 .logos-7{
   width: 30%;
-  margin: 0 55px;
+  margin: 0 25px;
 }
 .con-logos-7{
   margin-top: 40px;
@@ -290,7 +293,7 @@ body{
     width: 90%;
   }
   .titulo-7{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
   .eliminado{
     font-size: 1.5rem;
@@ -303,22 +306,27 @@ body{
   margin: 0 25px;
   }
 }
-/*paso 3*/
+
+/* inicia  modulo del paso 3*/
+.puas-3{
+  visibility: hidden;
+  width: 100%
+}
 .encabezado{
   background: yellow;
   display: flex;
 }
 .titulo-3{
-  font-size: 3.5rem;
+  font-size: 1rem;
   color: black;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 27px 10px;
+  padding: 22px 10px;
 }
 .eliminado-3{
-  margin-top: 30px;
+  margin-top: 10px;
   color: #5e365d;
-  font-size: 3.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -343,9 +351,9 @@ body{
   border: 3px solid black;
   background: white;
   color: black;
-  width: 370px;
-  height: 115px;
-  font-size: 40px;
+  width: 240px;
+  height: 55px;
+  font-size: 16px;
   font-weight: 500;
 }
 .btn-3:hover{
@@ -373,7 +381,8 @@ body{
     font-size: 1rem;
   } 
 }
-/*paso 2 */
+/* termina  modulo del paso 3*/
+/* inicia estilos del paso2 */
 .contendor-inferior-2{
   background-color: #5e365d;
   display: flex;
@@ -381,56 +390,69 @@ body{
   align-items: center;
 }
 .conversacion{
-  font-size: 2rem;
+  font-size: 1rem;
   color: white;
   text-align: center;
 }
 .cont-2{
   position: absolute;
-  margin-top: -300px;
+  margin-top: -134px;
   display: flex;
   justify-content: center;
 }
 .con-titulo-2{
   flex: 2;
   margin-top: 10px;
+  text-align: center;
+  text-align: center;
 }
 .subtitulo-2{
   color: black;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
+
 .subtitulo-2 span{
   background-color: yellow;
 }
-.titulo-2{
+.titulo-2 span{
   color: black;
   background-color: yellow;
-  font-size: 3rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .texto-2{
-  font-size: 1.5rem;
+  font-size: .9rem;
   color: white;
- font-weight: 700; 
+  font-weight: 700;
 }
 
 .contendor-mujer{
   flex: 1;
   margin-left: 20px;
+  text-align: center;
+}
+.contendor-mujer img{
+  width: 100%;
 }
 .contenedor-web{
-  width: 882px;
-  margin-top: -27px;
-  height: 300px;
+  width: 300px;
+  margin-top: 23px;
+  height: 200px;
   background-color: #f2f1f6;
 }
+.btn-paso6{
+  width: 120px;
+}
 .con-img-post{
+  padding: 10px 5px 0px 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 50px;
 }
 
 .foto-public
@@ -516,24 +538,30 @@ body{
     width: 300px;
   }
  .btn-paso6{
-   width: 120px;
- } 
+     width: 120px;
+  } 
 
  .con-img-post{
-  flex: 50px;
-  padding: 10px 5px 0px 5px;
-  display: flex;
-  justify-content: center;
-  align-items: unset;
-}
-.foto-public{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
+    flex: 50px;
+    padding: 10px 5px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: unset;
+  }
+  .foto-public{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+
 /** modificaciones del 12 de mayo*/
 #PhotoPerfil{
   width: 100%;
   border-radius: 50%;
 }
+}
+.lg-2{
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
