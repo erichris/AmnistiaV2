@@ -5,15 +5,36 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="functions.js"></script>
 	
 	<title>Antivirus Amnistia Internacional-Revisar Perfil</title>
 </head>
 <body style="background-color: rgb(50,50,50,0.3);">
-    <div class="container" style="background-color: black">
+	<div class="row" style="justify-content: center;">
+	<div class="col-sm-4" style="background-color: black;">
+	<div class="contenedor-carga" id="carga" style="min-height:100vh; display:flex; flex-direction: column; align-items: center; justify-content:center;">
+                    <div class="center">
+                        <div class="imagen-carga" style="margin-bottom: 30px;">
+                            <img src="img/logo_amnistia_internacional.png" alt=" logo amnistia internacional">
+                        </div>
+                        <div class="preloader-wrapper big active">
+                            <div class="spinner-layer spinner-yellow-only">
+                                <div class="circle-clipper left">
+                                <div class="circle"></div>
+                                </div><div class="gap-patch">
+                                <div class="circle"></div>
+                                </div><div class="circle-clipper right">
+                                <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+	<div class="hide" id="contenido">
         <div class="row">
             <div class="col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
                 <div class="encabezado">
@@ -45,12 +66,40 @@
         <div class="row">
             <div class="col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
                 <div class="boton-3">
-                    <form class="form-btn-3" action="https://waldoh.webfactional.com/paso6.html">
+                    <form class="form-btn-3" action="https://antivirusamnistiainternacional.com/paso6.html">
                         <input class="btn-3" id="ButtonContinue" type="submit" value="Continuar" value="continuar">
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+		</div>
+	</div>
+	</div>
+	<!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+     window.addEventListener('load', () => {
+         setTimeout(tiempo_carga, 2000);
+         function tiempo_carga(){
+         document.getElementById('carga').className ='hide'
+         document.getElementById('contenido').className =''
+         }
+     })
+     </script>
+	 <script>
+		localStorage.removeItem("TotalPostsDetecteds");
+		localStorage.removeItem("User");
+		localStorage.setItem("DelatedPosts", "0");
+		window.setInterval(function(){
+			var x = document.getElementById("PostContainer").childElementCount;
+			if(x != 0 && localStorage.getItem("User") == null){
+				localStorage.setItem("TotalPostsDetecteds", x);
+				localStorage.setItem("User", "Chris");
+			}
+			var y = parseInt(localStorage.getItem("TotalPostsDetecteds")) - x;
+			localStorage.setItem("DelatedPosts", y);
+		}, 1000);
+		
+	 </script>
 </body>
 </html>

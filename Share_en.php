@@ -79,7 +79,7 @@
                         <div class="cont-titulo">
                                 <h1 class="titulo-7">You have disinfected you profile</h1>
                         </div>
-                        <h2 class="eliminado"><span>00</span> deleted messages</h2>
+                        <h2 class="eliminado"><span id="ContadorXD">00</span> deleted messages</h2>
                         <p class="texto-7">Share the Antivirus with your friends. Together we can erradicate Gender Violence.
                         </p>
                         <div class="con-logos-7">
@@ -117,6 +117,7 @@
     FB.ui({
       method: 'share',
       display: 'popup',
+	  hashtag: '#JuntasHastaLaVida',
       href: 'https://www.facebook.com/PixelesMuertosStudio/photos/a.1678876739074501/1769905816638259/',
     }, function(response){});
   }
@@ -128,6 +129,10 @@
 
 	}
 	order();
-	</script
+	</script>
+	<script>
+		console.log(localStorage.getItem("DelatedPosts"));
+		document.getElementById("ContadorXD").innerHTML = localStorage.getItem("DelatedPosts");
+	</script>
 </body>
 </html>

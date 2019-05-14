@@ -4,7 +4,7 @@
 
     try {
       // Returns a `Facebook\FacebookResponse` object
-      $response = $fb->get('me?fields=id,name,picture,feed.limit(100){message,id}', $_SESSION['fb_access_token']);
+      $response = $fb->get('me?fields=id,name,picture,feed.limit(250){message,id}', $_SESSION['fb_access_token']);
     } catch(Facebook\Exceptions\FacebookResponseException $e) {
       echo 'Graph returned an error: ' . $e->getMessage();
       exit;
@@ -52,14 +52,14 @@
   function createList($PostIds, $PostMessage, $urlPic, $userName){
     for($i = 0; $i < count($PostIds); $i++) {
       $link = "http://facebook.com/" . $PostIds[$i];
-      $message =  substr($PostMessage[$i], 0, 20);
+      $message =  substr($PostMessage[$i], 0, 200);
 	  print("<div class='PostElement'>
 	  <a class='ancler-post PostList' href='" . $link . "'target=\"popup\" onclick=\"window.open('$link','popup','width=800,height=600'); return false;\">
 							<div class='post'>
-								<div class='col-sm-1 col-xs-1 con-img-post'>
+								<div class='col-sm-2 col-xs-1 con-img-post'>
 									<img src='" . $urlPic . "' alt='' class='foto-public'>
 								</div>
-								<div class='col-sm-11 col-xs-11'>
+								<div class='col-sm-10 col-xs-11'>
 									<span class='nombre-publi' >" .$userName ."</span>
 									<p class='post-text'>" . $message . "</p>
 								</div>
