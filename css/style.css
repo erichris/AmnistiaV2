@@ -382,7 +382,7 @@ body{
   } 
 }
 /* termina  modulo del paso 3*/
-/*paso 2 */
+/* inicia estilos del paso2 */
 .contendor-inferior-2{
   background-color: #5e365d;
   display: flex;
@@ -390,56 +390,69 @@ body{
   align-items: center;
 }
 .conversacion{
-  font-size: 2rem;
+  font-size: 1rem;
   color: white;
   text-align: center;
 }
 .cont-2{
   position: absolute;
-  margin-top: -300px;
+  margin-top: -134px;
   display: flex;
   justify-content: center;
 }
 .con-titulo-2{
   flex: 2;
   margin-top: 10px;
+  text-align: center;
+  text-align: center;
 }
 .subtitulo-2{
   color: black;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
+
 .subtitulo-2 span{
   background-color: yellow;
 }
-.titulo-2{
+.titulo-2 span{
   color: black;
   background-color: yellow;
-  font-size: 3rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .texto-2{
-  font-size: 1.5rem;
+  font-size: .9rem;
   color: white;
- font-weight: 700; 
+  font-weight: 700;
 }
 
 .contendor-mujer{
   flex: 1;
   margin-left: 20px;
+  text-align: center;
+}
+.contendor-mujer img{
+  width: 100%;
 }
 .contenedor-web{
-  width: 882px;
-  margin-top: -27px;
-  height: 300px;
+  width: 300px;
+  margin-top: 23px;
+  height: 200px;
   background-color: #f2f1f6;
 }
+.btn-paso6{
+  width: 120px;
+}
 .con-img-post{
+  padding: 10px 5px 0px 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 50px;
 }
 
 .foto-public
@@ -525,24 +538,30 @@ body{
     width: 300px;
   }
  .btn-paso6{
-   width: 120px;
- } 
+     width: 120px;
+  } 
 
  .con-img-post{
-  flex: 50px;
-  padding: 10px 5px 0px 5px;
-  display: flex;
-  justify-content: center;
-  align-items: unset;
-}
-.foto-public{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
+    flex: 50px;
+    padding: 10px 5px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: unset;
+  }
+  .foto-public{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+
 /** modificaciones del 12 de mayo*/
 #PhotoPerfil{
   width: 100%;
   border-radius: 50%;
 }
+}
+.lg-2{
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
