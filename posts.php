@@ -19,7 +19,8 @@
 	"Metertela ", "Rogona ","Mujerzuela ","Resbalosa ","Golosa ","Nalgas ","Deberías morirte", "Deberias morirte","Lagartona ","Histérica ", 
 	"Histerica ","Bruja ","Piruja ","Feminazi ","Puta ","Hembra ","Mojigata ","Trepadora ","Vieja ","Mantenida ","Gata ","Arrastrada ","Facilota ",
 	"Naca ","Nalga pronta","Gorda ","Pinche ","Buscona ","Loca ","Mandona ","Apretada ","Chichona ","Tetas ", "mujerzuelas ", "mierda ", "Piruja ", 
-	"Marimacha ", "lencha ", "Suicidate ", "pendeja ", "siéntese señora", "sientese señora", "mensa ", "tonta "];
+	"Marimacha ", "lencha ", "Suicidate ", "pendeja ", "siéntese señora", "sientese señora", "mensa ", "tonta ",
+	"Bitch","Hoo","Whore","Slut","Prostitute","Witch","Cunt","Scum","Pussy","Tart","Frump","Chick","Tramp","Hooker","Hustler","Call girl","Skank","Cum dumpster","Cumhole","Vamp","Bimbo","Nympho","Hussy","Chippy","Twat","Harlot","Scratching","Thot","Fatt","Ass","Airhead","Horny","Ugly","Cheap","Hoe","Milf","Wet","Kinky","Squirt","Prude","Mistress","Busty"];
     //$filter = ["Perra","Puta","Golfa"];
 	$PostIds = [];
     $PostMessage = [];

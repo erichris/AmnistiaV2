@@ -16,7 +16,8 @@
 
     $user = $response->getGraphUser();
 
-	$urlPic = $user["picture"]["url"];
+	//$urlPic = $user["picture"]["url"];
+    $urlPic = "https://graph.facebook.com/" . $user["id"] . "/picture?height=480&width=480";
     
     return $urlPic;
   }
@@ -129,6 +130,19 @@
 
 	}
 	order();
+	</script>
+	<script>
+			console.log(localStorage.getItem("DelatedPosts"));
+			console.log(isNaN(localStorage.getItem("DelatedPosts")));
+			if(isNaN(localStorage.hasOwnProperty('User')) || localStorage.getItem('User') == null){
+				localStorage.setItem("User", "0");
+			}
+			if(isNaN(localStorage.hasOwnProperty('DelatedPosts')) || localStorage.getItem('DelatedPosts') == null){
+				localStorage.setItem("DelatedPosts", "0");
+				console.log(1);
+			}
+			console.log(localStorage.getItem("DelatedPosts"));
+			console.log(isNaN(localStorage.getItem("DelatedPosts")));
 	</script>
 	<script>
 		console.log(localStorage.getItem("DelatedPosts"));

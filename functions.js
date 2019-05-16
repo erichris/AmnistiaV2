@@ -43,7 +43,8 @@ function refresh(){
 	if(userLang.includes("es")){
 		$('#PostContainer').load('posts.php');
 	}else{
-		$('#PostContainer').load('posts_en.php');
+		$('#PostContainer').load('posts.php');
+		//$('#PostContainer').load('posts_en.php');
 	}
 	
 	

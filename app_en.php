@@ -1,4 +1,4 @@
-<?php require "posts_en.php" ?>
+<?php require "posts.php" ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -79,7 +79,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
      <script>
      window.addEventListener('load', () => {
-         setTimeout(tiempo_carga, 2000);
+         setTimeout(tiempo_carga, 5000);
          function tiempo_carga(){
          document.getElementById('carga').className ='hide'
          document.getElementById('contenido').className =''
@@ -98,7 +98,7 @@
 			}
 			var y = parseInt(localStorage.getItem("TotalPostsDetecteds")) - x;
 			localStorage.setItem("DelatedPosts", y);
-		}, 1000);
+		}, 100);
 		
 	 </script>
 </body>
