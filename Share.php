@@ -42,11 +42,18 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src='https://connect.facebook.net/en_US/all.js'></script>
+    <script type="text/javascript">
+		var userLang = navigator.language || navigator.userLanguage; 
+		if(userLang.includes("es")){
+		}else{
+			window.open("https://antivirusamnistiainternacional.com/Share_en.php", "_top"); 
+		}
+	</script>
+	<script src='https://connect.facebook.net/en_US/all.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>Antivirus Contra la Violencia de Género-Desinfectar-perfil</title>
 </head>
-<body style="background-color: rgb(50,50,50,0.3);" >
+<body style="background-color:#2f3136">
 <div class="row" style="justify-content: center">
     <div class="col-sm-4" style="background-color: black">
 		<div class="contenedor-carga" id="carga" style="min-height:100vh; display:flex; flex-direction: column; align-items: center; justify-content:center;">
@@ -97,8 +104,7 @@
 							<div class="cont-titulo">
 									<h1 class="titulo-7" style="text-align: center;">has desinfectado tu perfil</h1>
 							</div>
-							<h2 class="eliminado"><span id="ContadorXD">00</span> Mensajes eliminados</h2>
-							<p class="texto-7">comparte el antivirus con tus amigos, juntos podemos exterminar la violencia de género
+							<p class="texto-7">Comparte el antivirus con tus amistades <br>¡Eliminemos la violencia de género de las redes!
 							</p>
 							<div class="con-logos-7">
 								<img class="logos-7" src="img/logo amnistia-internacional-negro.png" alt="logo amnistia internacional ">
@@ -122,7 +128,6 @@
          function tiempo_carga(){
          document.getElementById('carga').className ='hide'
          document.getElementById('contenido').className =''
-
          }
      })
      </script>
@@ -137,18 +142,21 @@
       });
     };
   </script>
-  <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js">
+  window.location.replace("https://www.facebook.com/profile");
+  </script>
 
   <script>
   document.getElementById('MyShareBtn').onclick = function() {
     console.log("entro");
     FB.ui({
       method: 'share',
-      display: 'popup',
 	  hashtag: '#JuntasHastaLaVida',
-      href: 'https://www.facebook.com/PixelesMuertosStudio/photos/a.1678876739074501/1769905816638259/',
-    }, function(response){});
-  }
+      href: 'https://antivirusamnistiainternacional.com',
+    }, function(response){
+		window.location.replace("https://www.facebook.com/profile");
+	});
+}
   </script>
 	<script>
 	function order(){
@@ -161,10 +169,10 @@
 	<script>
 			console.log(localStorage.getItem("DelatedPosts"));
 			console.log(isNaN(localStorage.getItem("DelatedPosts")));
-			if(isNaN(localStorage.hasOwnProperty('User')) || localStorage.getItem('User') == null){
+			if(isNaN(localStorage.getItem('User')) || localStorage.getItem('User') == null){
 				localStorage.setItem("User", "0");
 			}
-			if(isNaN(localStorage.hasOwnProperty('DelatedPosts')) || localStorage.getItem('DelatedPosts') == null){
+			if(isNaN(localStorage.getItem('DelatedPosts')) || localStorage.getItem('DelatedPosts') == null){
 				localStorage.setItem("DelatedPosts", "0");
 				console.log(1);
 			}
@@ -174,6 +182,11 @@
 	<script>
 		
 		document.getElementById("ContadorXD").innerHTML = localStorage.getItem("DelatedPosts");
+		if(localStorage.getItem("DelatedPosts") == "1"){
+			document.getElementById("AmountMessage").innerHTML = "Mensaje";
+		}else{
+			document.getElementById("AmountMessage").innerHTML = "Mensajes";
+		}
 	</script>
 	
 </body>

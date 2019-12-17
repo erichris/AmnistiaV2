@@ -13,7 +13,7 @@
 	
 	<title>Antivirus Amnistia Internacional-Revisar Perfil</title>
 </head>
-<body style="background-color: rgb(50,50,50,0.3);">
+<body>
 	<div class="row sin-borde" style="justify-content: center;">
 	<div class="col-sm-4 sin-borde" style="background-color: black;">
 	<div class="contenedor-carga" id="carga" style="min-height:100vh; display:flex; flex-direction: column; align-items: center; justify-content:center;">
@@ -40,7 +40,7 @@
                 <div class="encabezado">
                     <div class="col-sm-5" style="padding: 0%;">
                         <div class="con-titulo-3">
-                            <h1 class="titulo-3">se detectaron <span id="ContadorXD"> 00 </span> casos </br>de violencia de género</h1>
+                            <h1 class="titulo-3">se <span id="CasoTag">detectaron</span></br> <span id="ContadorXD"> 00 </span ><span id="AmountCasos"> casos </span> </br>de lenguaje sexista </h1>
                             <h2 class="eliminado-3"> ¡Elimínalos!</h2>
                         </div>
                     </div>
@@ -51,8 +51,12 @@
             </div>
         </div>
         <div class="row sin-borde">
-            <div class="col-sm-12 col xs-12 sin-borde"  style=" padding:unset;" >
-                <div class="contedor-publicaciones">
+            <div class="col-sm-12 col xs-12 sin-borde"  style=" padding:unset; background-color: #fff;" >
+				<div style="padding-left: 10px" > 
+				<p class="instruc"><br>1. Da click en una publicación para visualizarla. <br>2. Elimínala dando click en los 3 puntos del lado superior derecho.<br>3. Continúa analizando. </p>	
+				</div>
+                    
+                <div class="contedor-publicaciones" style=" background-color: #fff;">
 					<div id="PostContainer">
 					<!--<h1 id='PostTotales'>12</h1>-->
 						<!--Lala -->
@@ -63,6 +67,9 @@
         <div class="row">
             <div class="col-sm-12 col-xs-12" style="padding-right: 0px; padding-left: 0px;">
                 <div class="boton-3">
+					<div> 
+					
+					</div>
                     <form class="form-btn-3" action="https://antivirusamnistiainternacional.com/paso6.html">
                         <input class="btn-3" id="ButtonContinue" type="submit" value="Continuar" value="continuar">
                     </form>
@@ -95,6 +102,15 @@
 			}
 			var y = parseInt(localStorage.getItem("TotalPostsDetecteds")) - x;
 			localStorage.setItem("DelatedPosts", y);
+			
+			if(localStorage.getItem("TotalPostsDetecteds") == 1){
+				document.getElementById("AmountCasos").innerHTML = " caso";
+				document.getElementById("CasoTag").innerHTML = " detectó";
+			}else{
+				document.getElementById("AmountCasos").innerHTML = " casos";
+				document.getElementById("CasoTag").innerHTML = " detectaron";
+			}
+			
 		}, 100);
 		
 	 </script>

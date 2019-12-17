@@ -14,8 +14,9 @@
     }
 
     $user = $response->getGraphUser();
-    $filter = ["Bitch","Hoo","Whore","Slut","Prostitute","Witch","Cunt","Scum","Pussy","Tart","Frump","Chick","Tramp","Hooker","Hustler","Call girl","Skank","Cum dumpster","Cumhole","Vamp","Bimbo","Nympho","Hussy","Chippy","Twat","Harlot","Scratching","Thot","Fatt","Ass","Airhead","Horny","Ugly","Cheap","Hoe","Milf","Wet","Kinky","Squirt","Prude","Mistress","Busty"];
-    
+    $filter = ["Bitch ","Hoo ","Whore ","Slut ","Prostitute ","Witch ","Cunt ","Scum ","Pussy ","Tart ","Frump ","Chick ","Tramp ","Hooker ","Hustler ","Call girl ","Skank ",
+	"Cum dumpster ","Cumhole ","Vamp ","Bimbo ","Nympho ","Hussy ","Chippy ","Twat ","Harlot ","Scratching ","Thot ","Fatt ","Ass ","Airhead ","Horny ","Ugly ","Cheap ",
+	"Hoe ","Milf ","Wet ","Kinky ","Squirt ","Prude ","Mistress ","Busty "];
 	$PostIds = [];
     $PostMessage = [];
 	$urlPic = $user["picture"]["url"];

@@ -38,8 +38,10 @@
       $id = $user["feed"][$i]["id"];
       for($j = 0; $j < count($filter); $j++) {
         if (strpos(strtolower("| ".$message), strtolower(" ".$filter[$j])) == true) {
+			$newArray = explode(strtolower($filter[$j]), strtolower($message));
             array_push($PostIds, $id);
-            array_push($PostMessage, $message);
+            //array_push($PostMessage, $message);
+			array_push($PostMessage, $newArray[0] . "<b>" . $filter[$j] . "</b>" . $newArray[1]);
             //print($filter[$j]. " existe en " . $message ."</br>");
         }else{
           //print($filter[$j]. " no existe en " . $message ."</br>");
